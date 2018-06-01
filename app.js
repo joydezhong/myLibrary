@@ -13,7 +13,7 @@ var app = express();
 //import the mongoose module
 var mongoose = require('mongoose');
 //set uo default mongoose connection
-var mongoDB = 'mongodb://127.0.0.1/my_database';
+var mongoDB = 'mongodb://zwp:zwp123pwz@ds016098.mlab.com:16098/mylibrary';
 mongoose.connect(mongoDB);
 //Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
