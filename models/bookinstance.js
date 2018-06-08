@@ -17,5 +17,10 @@ BookInstanceSchema.virtual('due_back_formatted').get(function () {
   return moment(this.due_back).format('MMMM Do, YYYY');
 });
 
+// Virtual for bookinstance's URL
+BookInstanceSchema.virtual('url').get(function () {
+  return '/catalog/bookinstance/' + this._id;
+});
+
 //Export model
 module.exports = mongoose.model('BookInstance', BookInstanceSchema);
