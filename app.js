@@ -13,7 +13,7 @@ var app = express();
 /*DB*/
 //import the mongoose module
 var mongoose = require('mongoose');
-//set uo default mongoose connection
+//set uo default mongoose connection  // your the way of contract DB ** Only for testing to close at any time
 var mongoDB = 'mongodb://zwp:zwp123pwz@ds016098.mlab.com:16098/mylibrary';
 mongoose.connect(mongoDB);
 //Get Mongoose to use the global promise library
